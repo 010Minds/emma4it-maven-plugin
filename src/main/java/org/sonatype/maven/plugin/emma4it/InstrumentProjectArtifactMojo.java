@@ -173,7 +173,7 @@ public class InstrumentProjectArtifactMojo
         FileUtils.copyFile( instrumentedFile, original );
         instrumentedFile.delete();
 
-        Artifact emma = artifactFactory.createArtifact( "emma", "emma", "2.0.5312", "compile", "jar" );
+        Artifact emma = artifactFactory.createArtifact( "emma", "emma", "2.1.5320", "compile", "jar" );
         try
         {
             resolver.resolve( emma, remoteRepositories, localRepository );
